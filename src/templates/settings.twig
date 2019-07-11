@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Diplomat plugin for Craft CMS 3.x
+ *
+ * Diplomat Settings.twig
+ *
+ * @author    @cole007
+ * @copyright Copyright (c) 2019 @cole007
+ * @link      http://ournameismud.co.uk/
+ * @package   Diplomat
+ * @since     0.0.1
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("ournameismud\\diplomat\\assetbundles\\diplomat\\DiplomatAsset") %}
+
+{{ forms.textField({
+    label: 'Some Field',
+    instructions: 'Enter some setting here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: settings['someAttribute']})
+}}

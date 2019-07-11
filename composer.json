@@ -1,0 +1,40 @@
+{
+    "name": "ournameismud/diplomat",
+    "description": "Simple twig variable for fetching a list of fetching countries",
+    "type": "craft-plugin",
+    "version": "0.0.1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "diplomat"
+    ],
+    "support": {
+        "docs": "https://github.com/ournameismud/diplomat/blob/master/README.md",
+        "issues": "https://github.com/ournameismud/diplomat/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "@cole007",
+            "homepage": "http://ournameismud.co.uk/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "ournameismud\\diplomat\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Diplomat",
+        "handle": "diplomat",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/ournameismud/diplomat/master/CHANGELOG.md",
+        "class": "ournameismud\\diplomat\\Diplomat"
+    }
+}
