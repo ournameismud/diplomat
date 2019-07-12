@@ -17,10 +17,10 @@
 
 {% do view.registerAssetBundle("ournameismud\\diplomat\\assetbundles\\diplomat\\DiplomatAsset") %}
 
-{{ forms.textField({
-    label: 'Some Field',
-    instructions: 'Enter some setting here.',
-    id: 'someAttribute',
-    name: 'someAttribute',
-    value: settings['someAttribute']})
+{{ forms.textareaField({
+    label: 'Countries',
+    instructions: 'Enter JSON object of Countries here.',
+    id: 'countries',
+    name: 'countries',
+    value: settings['countries']})
 }}

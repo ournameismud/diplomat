@@ -41,3 +41,4 @@ Some things to do, and ideas for potential features:
 * Release it
 
 Brought to you by [@cole007](http://ournameismud.co.uk/)
+Icon [Briefcase by Andrey from the Noun Project](https://thenounproject.com/search/?q=diplomat&i=1512689)

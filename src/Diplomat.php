@@ -58,6 +58,12 @@ class Diplomat extends Plugin
         parent::init();
         self::$plugin = $this;
 
+
+        $settings = $this->getSettings();
+        if (strlen(trim($settings->countries)) == 0) {
+            require_once 'config.php';
+            $settings->countries = $countries;
+        } 
         Event::on(
             CraftVariable::class,
             CraftVariable::EVENT_INIT,
@@ -103,6 +109,9 @@ class Diplomat extends Plugin
      */
     protected function settingsHtml(): string
     {
+        $settings = $this->getSettings();
+        // $countries = $settings->countries;
+               
         return Craft::$app->view->renderTemplate(
             'diplomat/settings',
             [

@@ -28,12 +28,10 @@ class DiplomatVariable
      * @param null $optional
      * @return string
      */
-    public function exampleVariable($optional = null)
-    {
-        $result = "And away we go to the Twig template...";
-        if ($optional) {
-            $result = "I'm feeling optional today...";
-        }
-        return $result;
+    public function getCountries($optional = null)
+    {            
+        $countries = \ournameismud\diplomat\Diplomat::getInstance()->settings->countries;
+        $countries = json_decode($countries, true);
+        return $countries;
     }
 }
